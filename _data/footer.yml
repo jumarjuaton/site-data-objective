@@ -1,0 +1,13 @@
+- links:
+    - name: Facebook
+      link: 'https://www.facebook.com/dataobjective'
+      new_window: true
+      social_icon: Facebook
+    - name: Twitter
+      link: 'https://twitter.com/dataobjective'
+      social_icon: Twitter
+      new_window: true
+    - name: Instagram
+      link: 'https://www.instagram.com/dataobjectiveinc/'
+      social_icon: Instagram
+      new_window: true

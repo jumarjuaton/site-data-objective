@@ -1,0 +1,84 @@
+---
+title: Services
+heading: Blockchain Development Services
+description: >-
+  Get rid of friction, build trust and unlock new prospects across businesses
+  and industries with the power of our Blockchain solutions. What business
+  challenges we overcome together?
+services_table_top:
+  - name: Smart Contract Development
+    details:
+      - text: >-
+          Designing, development, auditing and optimization of self-executing
+          smart contracts systems based on Ethereum and other platforms to
+          automate transactions without involving middlemen.
+  - name: Dapps Development
+    details:
+      - text: >-
+          Development of smart and tailored decentralized ethereum apps (Dapps)
+          based on blockchain technology that are scalable, advanced and
+          high-proficient.
+  - name: Private Blockchain Development
+    details:
+      - text: >-
+          Building permissioned private blockchain applications for any
+          industry, any organization and save costs of infrastructure and
+          operations.
+  - name: Blockchain Consulting
+    details:
+      - text: >-
+          Sharing of experience and expertise to advise you on your blockchain
+          journey whether you are prepared for blockchain and how can you
+          achieve the best in the industry.
+services_table_btm:
+  - name: ICO Development And Launch
+    details:
+      - text: >-
+          End-to-end ICO launch and development services including evaluation of
+          token model, whitepapers, website designing, smart contracts, Pre and
+          Post ICO services.
+  - name: Exchange Platforms
+    details:
+      - text: >-
+          Assistance in buying, selling and exchanging various digital
+          currencies through a cryptocurrency exchange.
+  - name: Crypto Wallet Development
+    details:
+      - text: >-
+          Assistance to develop digital wallets wherein cryptocurrencies are
+          stored, transacted and maintained with the use of meticulous
+          programming.
+  - name: Hyperledger And Multichain Development
+    details:
+      - text: >-
+          Assistance to the clients in setting up enterprise grade blockchain
+          via open source blockchain framework i.e. hyperledger development
+          tools and platforms.
+---
+
+<div class="plans">
+   {% for service in page.services_table_top %}
+   <ul class="plan pb-5">
+      <li>
+         <h4 class="pt-5 pl-3 pr-3">{{ service.name }}</h4>
+         <div class="headline"></div>
+      </li>
+      {% for detail in service.details %}
+      <li {% if feature.highlight %} class="highlighted"{% endif %}><small class="p-3 card-text text-left">{{ detail.text }}</small></li>
+      {% endfor %}
+   </ul>
+   {% endfor %}
+</div>
+<div class="plans">
+   {% for service in page.services_table_btm %}
+   <ul class="plan pb-5">
+      <li>
+         <h4 class="pt-5 pl-3 pr-3">{{ service.name }}</h4>
+         <div class="headline"></div>
+      </li>
+      {% for detail in service.details %}
+      <li {% if feature.highlight %} class="highlighted headline"{% endif %}><small class="p-3 card-text text-left">{{ detail.text }}</small></li>
+      {% endfor %}
+   </ul>
+   {% endfor %}
+</div>

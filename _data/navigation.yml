@@ -1,0 +1,16 @@
+- name: Home
+  link: /
+  new_window: false
+  highlight: false
+- name: Services
+  link: /services/
+  new_window: false
+  highlight: false
+- name: Blog
+  link: 'http://blog.dataobjective.com'
+  new_window: true
+  highlight: false
+- name: Contact Us
+  link: /contact-us/
+  new_window: false
+  highlight: false
